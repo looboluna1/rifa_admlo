@@ -1,0 +1,42 @@
+.app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content {
+    margin-bottom: 60px; /* Espaço para o menu e indicador */
+  }
+  
+  .navigation-menu {
+    display: flex;
+    align-items: flex-end; /* Alinhe o menu na parte inferior */
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    position: fixed; /* Fixe o menu na parte inferior */
+    bottom: 0; /* Alinhe o menu na parte inferior */
+    background-color: #f2f2f2; /* Cor de fundo do menu */
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.2s;
+    color: #333; /* Cor dos itens do menu */
+    font-weight: bold;
+  }
+  
+  .menu-item.active {
+    color: #007bff; /* Cor do item ativo */
+  }
+  
+  .menu-indicator {
+    position: absolute;
+    height: 4px;
+    width: 33.33%;
+    background: linear-gradient(90deg, #007bff, #0099ff); /* Gradiente para o indicador */
+    border-radius: 2px;
+    transition: left 0.3s, transform 0.3s;
+    transform-origin: left;
+  }

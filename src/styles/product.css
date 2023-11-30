@@ -1,0 +1,28 @@
+.ul_products{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+.li_card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    padding: 1rem;
+}
+.li_card img{
+    width: 8rem;
+}
+.container_informations{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.icon_delete{
+    color: white;
+}
+.icon_delete:active{
+    color: blue;
+}
